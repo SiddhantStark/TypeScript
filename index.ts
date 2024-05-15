@@ -43,3 +43,48 @@
 // console.log(tup);
 
 
+
+
+//enums
+// enum Size {a=1,b,c,d,e};
+// let x: Size = Size.a;
+// let y: Size = Size.c;
+
+// console.log(x);
+// console.log(y);
+
+//function
+
+function f(n: number): number {
+    return n;
+}
+
+let a = f(3);
+console.log(a);
+
+//objects
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
