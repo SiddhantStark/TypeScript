@@ -55,14 +55,33 @@
 
 //function
 
-function f(n: number): number {
-    return n;
-}
+// function f(n: number): number {
+//     return n;
+// }
 
-let a = f(3);
-console.log(a);
+// let a = f(3);
+// console.log(a);
 
 //objects
+
+let employee : {
+    id: number,
+    name: string,
+    retire: (age: number) => void
+} = {
+    id: 1,
+    name: "Naruto fan",
+    retire: (age: number) => {
+        if(age>60){
+            console.log("Retire");
+            return;
+        }
+        
+        console.log("You're because of your you're a man and only have 30 years of experience, 69 years of experience.")
+    }
+}
+
+console.log(employee.retire(58));
 
 
 
