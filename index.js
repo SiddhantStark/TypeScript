@@ -6,54 +6,11 @@
 // if(age > 60){
 //     console.log("Retire");
 // }
-//Built-in types
-// let sales = 123;
-// console.log(sales);
-// let p = true; 
-// let m = 12_000_000;
-// console.log(m+sales);
-//any type
-// let l;
-// console.log(l);
-// function(l){
-// Parameter 'l' implicitly has an 'any' type
-//     console.log(l);
-// }
-//Arrays
-// let arr : number[] = []
-// arr.push(1);
-// arr.push(7); //thala for a reason
-// //arr.push('3') -> error dega
-// arr.forEach(element => {
-//     //element.toExponential(3)
-//     // element.toLocaleString();
-//     console.log(element);
-// });
-//console.log(arr);
-//Tuples
-// let tup : [number, string] = [7, "Thala"];
-// console.log(tup)
-// tup[0]=18;
-// tup[1]="Koach";
-// console.log(tup);
-//enums
-// enum Size {a=1,b,c,d,e};
-// let x: Size = Size.a;
-// let y: Size = Size.c;
-// console.log(x);
-// console.log(y);
-//function
-// function f(n: number): number {
-//     return n;
-// }
-// let a = f(3);
-// console.log(a);
-//objects
-var employee = {
-    id: 1,
-    name: "Naruto fan",
-    retire: function (age) {
-        age = 60;
-        return age;
-    }
-};
+var ken_kaneki = 1000;
+var eye_patch = 7;
+function help(customer_id) {
+    return customer_id === 0 ? null : { id: customer_id };
+}
+var n = help(0);
+// console.log(n.id); not correct because n can be null
+console.log(n === null || n === void 0 ? void 0 : n.id); //means if n is null then null else it will log id
